@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root {
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: 0.3s all linear;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(204, 26%, 96%);
+}
+
+/* *****Lorem ipsum */
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  text-align: center;
+  /* padding: 3rem; */
+}
+.section-center h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  color: #2f3938;
+}
+
+label {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #4c4b63;
+}
+input {
+  width: 4rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  outline-color: #37393a;
+}
+.generate-btn {
+  background: cornflowerblue;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.generate-btn:hover {
+  background: rgb(155, 186, 244);
+  color: cornflowerblue;
+}
+
+.lorem-text {
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+.result {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 700px) {
+  .section-center h2 {
+    font-size: 2.5rem;
+  }
+}
